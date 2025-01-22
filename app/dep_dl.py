@@ -46,9 +46,9 @@ class DownloadWindow(QWidget, Ui_Download):
                 "yt-dlp": "yt-dlp_macos",
             },
             "Windows": {
-                "ffmpeg": "ffmpeg-win64-v4.1.exe",
+                "ffmpeg": "ffmpeg-win64-v4.2.2.exe",
                 "ffprobe": "ffprobe-win64-v4.1.exe",
-                "yt-dlp": "yt-dlp.exe",
+                "yt-dlp": "yt-dlp_win7.exe",
             },
         }
 
@@ -61,7 +61,7 @@ class DownloadWindow(QWidget, Ui_Download):
             for exe in exes:
                 if exe == "yt-dlp":
                     url = (
-                        "https://github.com/yt-dlp/yt-dlp/releases/latest/download/"
+                        "https://github.com/nicolaasjan/yt-dlp/releases/latest/download/"
                         + binaries[os_][exe]
                     )
                 else:
