@@ -48,11 +48,11 @@ class DownloadWindow(QWidget, Ui_Download):
             "Windows": {
                 "ffmpeg": "ffmpeg-win64-v4.2.2.exe",
                 "ffprobe": "ffprobe-win64-v4.1.exe",
-                "yt-dlp": "yt-dlp_win7.exe",
+                "yt-dlp_win7": "yt-dlp_win7.exe",
             },
         }
 
-        exes = [exe for exe in ["ffmpeg", "ffprobe", "yt-dlp"] if not shutil.which(exe)]
+        exes = [exe for exe in ["ffmpeg", "ffprobe", "yt-dlp_win7"] if not shutil.which(exe)]
         os_ = platform.system()
 
         if exes:
